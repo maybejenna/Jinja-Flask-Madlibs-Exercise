@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block title %}User's Story{% endblock%}
+
+{% block content %}
+    <p id="story_title"> {{ random_title }}
+        {% if username %}
+            by {{ username }}
+        {% endif %}
+    </p>
+    <p id="story_text">{{ story_text }}</p>
+{% endblock %}

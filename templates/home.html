@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+
+{% block title %}Home Page Form{% endblock%}
+
+{% block content %}
+<div id="form">
+<form action="/story" method="get">
+    <label for="username">Enter Your Name:</label>
+    <input type="text" id="username" placeholder="username" name="username">
+    <br>
+    <br>
+    <label for="place">Enter a Place:</label>
+    <input type="text" id="place" placeholder="Place" name="place">
+    <br>
+
+    <label for="noun">Enter a Noun:</label>
+    <input type="text" id="noun" placeholder="Noun" name="noun">
+    <br>
+
+    <label for="verb">Enter a Verb:</label>
+    <input type="text" id="verb" placeholder="Verb" name="verb">
+    <br>
+
+    <label for="adjective">Enter an Adjective:</label>
+    <input type="text" id="adjective" placeholder="Adjective" name="adjective">
+    <br>
+
+    <label for="plural_noun">Enter a Plural Noun:</label>
+    <input type="text" id="plural_noun" placeholder="Plural Noun" name="plural_noun">
+    <br>
+    <br> 
+
+    <p id="story_type_question"> What kind of story would you like?</p>
+    <label><input type="radio" name="story_type" value="generic"> Generic Story</label>
+    <label><input type="radio" name="story_type" value="mystery"> Mystery Story</label>
+    <label><input type="radio" name="story_type" value="adventure"> Adventure Story</label>
+    <label><input type="radio" name="story_type" value="magical"> Magical Story</label>
+    <label><input type="radio" name="story_type" value="realistic_fiction "> Realistic Fiction Story</label>
+    <label><input type="radio" name="story_type" value="random "> Random Story</label>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</div>
+{% endblock%}
